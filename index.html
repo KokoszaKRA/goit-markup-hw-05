@@ -22,7 +22,7 @@
             <a class="logo" href="./index.html"><span class="logo-span">Web</span>Studio</a>
             <nav class="navigation">
                 <ul class="navigation__list list">
-                    <li class="navigation__item ">
+                    <li class="navigation__item navigation__item--activ">
                         <a class="navigation__link" href="./index.html">Agencja</a>
                     </li>
                     <li class="navigation__item">
@@ -61,7 +61,7 @@
         <section class="orders orders-photo">
             <div class="container">                
                 <h1 class="order-title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU </h1>
-                <button class="order-btn" type="button"> Zamów usługe</button>                  
+                <button class="order-btn" type="button" data-modal-open> Zamów usługe</button>                  
             </div>
         </section>
 
@@ -203,8 +203,8 @@
                                             </svg>
                                         </a>
                                     </li>
-
                                 </ul>
+                                
                             </figcaption>
                         </figure>
 
@@ -483,6 +483,18 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-button" data-modal-close>
+                <svg class="exit-icon">
+                    <use href="./images/icons.svg#exit-icon"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+<script src="./js/modal.js"></script>
 </body>
 
 </html>
